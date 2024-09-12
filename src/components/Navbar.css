@@ -1,0 +1,48 @@
+.navigation
+{
+  height: 90px;
+  width: 100%;
+  position: fixed;
+  top:0%;
+  background-color: #fff;
+  z-index: 999;
+  border: 1px solid lightgrey;
+}
+
+.nav
+{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: rgba(255,255,255,0); */
+}
+
+.pincode
+{
+    font-size: 12px;
+    text-decoration: none;
+}
+.icons
+{
+    font-size: 15px;
+}
+.input
+{
+    /* background-color: black; */
+    border: 1px solid violet;
+    border-radius: 15px;
+    position: relative;
+
+}
+.input input
+{
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    padding-top: 5px;
+}
+.input button
+{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
