@@ -15,7 +15,7 @@ const RingsDetails = () => {
 
   const productdata = () => {
     axios
-      .get(`http://localhost:3000/products/${id}`)
+      .get(`https://caratlane-backend.onrender.com/products/${id}`)
       .then((res) => {
         setsingledata(res.data);
       })

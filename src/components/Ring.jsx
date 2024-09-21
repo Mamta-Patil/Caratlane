@@ -11,7 +11,7 @@ const Ring = () => {
   const [page,setpage]=useState(1)
   const getfetchdata = () => {
     axios
-      .get("http://localhost:3000/products", {
+      .get("https://caratlane-backend.onrender.com/products", {
         params:{
           _page:page,
            _limit:5,

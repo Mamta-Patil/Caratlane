@@ -13,7 +13,7 @@ const AddRingProduct = () => {
   const [quantity,setquantity] = useState(1)
   const PostData = () => {
     axios
-      .get("http://localhost:3000/post")
+      .get("https://caratlane-backend.onrender.com/post")
       .then((res) => {
                 const storedCart = JSON.parse(localStorage.getItem("cartData"));
                 console.log(storedCart)
