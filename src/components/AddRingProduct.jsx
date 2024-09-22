@@ -159,16 +159,17 @@ const formatPriceToNumber=(price)=>{
             )}
           </div>
 
-          <div className="cartDetails">
+          <div className="cartDetails d-none d-lg-block">
           <p>Cart Details</p>
 
-{/* add price with quantity */}
+       {/* add price with quantity */}
           {adddata.map((item, index) => (
             <div key={item.id}>
               {item.title}: {item.price} x {item.quantity}    =   {(formatPriceToNumber(item.price) * item.quantity).toLocaleString()}
               <br />
             </div>
           ))}
+
 
 
 
@@ -181,9 +182,6 @@ const formatPriceToNumber=(price)=>{
           })} */}
           <br />
           
-
-
-
 
 
     {/* Calculate the total price considering the quantity */}
@@ -199,7 +197,49 @@ const formatPriceToNumber=(price)=>{
 
 
           </div>
+
       </div>
+
+
+          <div className="cartDetails d-block d-lg-none">
+          <p>Cart Details</p>
+
+       {/* add price with quantity */}
+          {adddata.map((item, index) => (
+            <div key={item.id}>
+              {item.title}: {item.price} x {item.quantity}    =   {(formatPriceToNumber(item.price) * item.quantity).toLocaleString()}
+              <br />
+            </div>
+          ))}
+
+
+
+
+          {/* {adddata.map((item,index)=>{
+          return  <div key={item.id}>
+            {item.title}:
+            {item.price}
+            <br />
+            </div>
+          })} */}
+          <br />
+          
+
+
+    {/* Calculate the total price considering the quantity */}
+    {adddata
+            .map((item) => formatPriceToNumber(item.price) * item.quantity)
+            .reduce((total, value) => total + value, 0)
+            .toLocaleString()}
+
+
+           {/* {adddata.map((item)=> formatPriceToNumber(item.price)).reduce((total,value)=> total + value,0).toLocaleString()} */}
+
+
+
+
+          </div>
+        
 
     
 

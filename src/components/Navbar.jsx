@@ -33,7 +33,7 @@ const Navbar = () => {
           <NavLink to={"/test"} className={"text-dark nav-link p-0"}>
             Solitairis
           </NavLink>
-          <NavLink to={"/test"} className={"text-dark nav-link p-0"}>
+          <NavLink to={"/test"} className={"text-dark nav-link p-0 d-lg-block d-none"}>
             Manglesutras
           </NavLink>
           {/* <NavLink to={"/test"} className={"text-dark nav-link p-0"}>Nacklces</NavLink> */}
