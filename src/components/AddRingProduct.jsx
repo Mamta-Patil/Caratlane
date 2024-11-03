@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-// import Navbar from "./Navbar"
+import Navbar from "./Navbar"
 import { Link, NavLink, useParams } from "react-router-dom";
 
 // react icon's file
@@ -10,7 +10,7 @@ import { LuDelete } from "react-icons/lu";
 
 const AddRingProduct = () => {
   const [adddata, setadddata] = useState([]);
-  const [quantity,setquantity] = useState(1)
+  // const [quantity,setquantity] = useState(1)
   const PostData = () => {
     axios
       .get("https://caratlane-backend.onrender.com/post")
@@ -84,10 +84,10 @@ const formatPriceToNumber=(price)=>{
   
   return (  
     <div>
-      {/* <Navbar /> */}
+      <Navbar />
 
-      <div className="d-flex cartpage">
-          <div className="cart">
+      <div className="d-flex cartpage mt-lg-5">
+          <div className="cart mt-lg-5">
             {adddata.length === 0 ? (
               <div>
                 <h3>There is Nothing here! </h3>
@@ -137,21 +137,6 @@ const formatPriceToNumber=(price)=>{
                   </div>
 
 
-                  {/* {quantity.map((num,numindex)=>{
-                    <p>
-                    </p>
-                  })} */}
-
-
-
-                  {/* <button className="p-2" onClick={()=>setquantity(quantity-1)} disabled={quantity==0}>-</button> 
-                  <button className="ms-4 p-2">{ quantity}</button>
-                  <button className="ms-4 p-2" onClick={()=>setquantity(quantity+1)}>-</button> */}
-
-
-
-                  {/* {console.log(adddata.length)} */}
-                  {/* {console.log(quantity)} */}
                 </div>
                 </div>
                 
@@ -159,7 +144,7 @@ const formatPriceToNumber=(price)=>{
             )}
           </div>
 
-          <div className="cartDetails d-none d-lg-block">
+          <div className="cartDetails d-none d-lg-block mt-5 pt-5">
           <p>Cart Details</p>
 
        {/* add price with quantity */}
@@ -170,32 +155,14 @@ const formatPriceToNumber=(price)=>{
             </div>
           ))}
 
-
-
-
-          {/* {adddata.map((item,index)=>{
-          return  <div key={item.id}>
-            {item.title}:
-            {item.price}
-            <br />
-            </div>
-          })} */}
-          <br />
-          
-
+<br />
 
     {/* Calculate the total price considering the quantity */}
     {adddata
             .map((item) => formatPriceToNumber(item.price) * item.quantity)
             .reduce((total, value) => total + value, 0)
             .toLocaleString()}
-
-
            {/* {adddata.map((item)=> formatPriceToNumber(item.price)).reduce((total,value)=> total + value,0).toLocaleString()} */}
-
-
-
-
           </div>
 
       </div>
@@ -240,6 +207,47 @@ const formatPriceToNumber=(price)=>{
 
           </div>
         
+
+
+{/*  */}
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<div className="cartDetails d-block">
+  <p>Cart Details</p>
+  <table className="table">
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      {adddata.map((item) => (
+        <tr key={item.id}>
+          <td>{item.title}</td>
+          <td>{item.price}</td>
+          <td>{item.quantity}</td>
+          <td>{(formatPriceToNumber(item.price) * item.quantity).toLocaleString()}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+  <br />
+  {/* Calculate the total price considering the quantity  */}
+  <div>
+    {/* <strong>Total:</strong> {adddata.map((item) => formatPriceToNumber(item.price) * item.quantity).reduce((total, value) => total + value, 0).toLocaleString()} */}
+  </div>
+ </div>
+    
 
     
 

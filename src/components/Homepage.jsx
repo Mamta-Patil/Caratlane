@@ -81,9 +81,9 @@ const Homepage = () => {
 
       {/* second section */}
       <div className="row m-0 images py-4">
-        <div className="col-lg-6">
+        <div className="col-lg-6 col-12 m-auto h-25">
           <NavLink>
-            <img src={Image1} className="img-fluid w-100" />
+            <img src={Image1} className="img-fluid w-100 h-25" />
           </NavLink>
         </div>
         <div className="col-lg-6">
@@ -104,32 +104,32 @@ const Homepage = () => {
 
       {/* Third Section */}
       <div className="row m-0 visual_tab">
-        <div className="col-lg-4 col-md-6 mt-4 text-sm-center">
+        <div className="col-lg-4 col-md-6 mt-4 text-center">
           <NavLink className={"tab_content m-auto"}>
             <img src={TimelessBand} className="img-fluid" />
           </NavLink>
         </div>
-        <div className="col-lg-4 col-md-6 mt-4 text-sm-center">
+        <div className="col-lg-4 col-md-6 mt-4 text-center">
           <NavLink className={"tab_content"}>
             <img src={TrendingMangalsutras} className="img-fluid" />
           </NavLink>
         </div>
-        <div className="col-lg-4 col-md-6 mt-4 text-sm-center">
+        <div className="col-lg-4 col-md-6 mt-4 text-center">
           <NavLink className={"tab_content"}>
             <img src={EverydayBraceletes} className="img-fluid" />
           </NavLink>
         </div>
-        <div className="col-lg-4 mt-4 col-md-6 text-sm-center">
+        <div className="col-lg-4 mt-4 col-md-6 text-center">
           <NavLink className={"tab_content"}>
             <img src={AwwDorablrKidsDesigns} className="img-fluid" />
           </NavLink>
         </div>
-        <div className="col-lg-4 mt-4 col-md-6 text-sm-center">
+        <div className="col-lg-4 mt-4 col-md-6 text-center">
           <NavLink className={"tab_content"}>
             <img src={StyleshMensSolitarres} className="img-fluid " />
           </NavLink>
         </div>
-        <div className="col-lg-4 mt-4 col-md-6 text-sm-center">
+        <div className="col-lg-4 mt-4 col-md-6 text-center">
           <NavLink className={"tab_content"}>
             <img src={Under50kNecklaces} className="img-fluid" />
           </NavLink>

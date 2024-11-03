@@ -36,6 +36,10 @@
   width: 100%;
 }
 
+.cartDetails 
+{
+  width: 100%;
+}
 
 }
 @media (min-width: 578px) and (max-width: 776px) {
@@ -74,6 +78,11 @@
       margin-left: 0%;
     }
 
+    .cartDetails 
+    {
+      width: 100%;
+    }
+    
 
 }
 @media (min-width: 778px) and (max-width: 992px) {
@@ -110,11 +119,6 @@
   {
     margin-right: 0%;
   }
-  .designs .col-lg-4
-  {
-    /* margin-top: 0%; */
-    /* margin-left: 0%; */
-  }
   
 }
 @media (min-width: 993px) and (max-width: 1200px) {
@@ -149,7 +153,7 @@
   }
 
 }
-@media (min-width: 1200px) and (max-width: 1400px) {
+@media (min-width: 1200px) and (max-width: 1500px) {
   .products,
   .rings_details {
     margin-top: 5%;

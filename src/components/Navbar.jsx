@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <div>
       {/* <h4>Navbar</h4> */}
-      <div className="row m-0 py-4 navigation">
+      <div className="row m-0 py-4 navigation d-none d-lg-block">
         <div className=" col-lg-6 d-flex nav">
           <NavLink to={"/test"}>
             <img src={LOGO} height={35} width={50} />
@@ -86,8 +86,58 @@ const Navbar = () => {
           </Link>
           </NavLink>
           </div>
-          
-         
+        </div>
+      </div>
+
+
+      {/* for media query */}
+      <div className="navbar d-lg-none d-block">
+        <div className="row m-0">
+           <div className="col-4">
+          <NavLink to={"/test"}>
+            <img src={LOGO} height={35} width={50} />  Cartalane
+          </NavLink>
+          {/* <i class="bi bi-list menu text-dark"></i> */}
+           </div>
+           <div className="col-8 text-end">
+          <div className="user_info">
+            <FaUser className="me-4 mt-2" />
+            <div className="info">
+              <h6>
+                <NavLink>Your Account </NavLink>
+                <br />
+                <NavLink>Access account & manage your orders </NavLink>
+                <div>
+                  <NavLink className={"userbtn mt-2"}>
+                    <Link to={"/login"}>Login</Link>
+                  </NavLink>
+                  <NavLink className={"userbtn mt-2"}>
+                    <Link to={"/signup"}>Sign Up</Link>
+                  </NavLink>
+                </div>
+              </h6>
+            </div>
+          <FaHeart className="me-4 mt-2" />
+          <NavLink>
+          <Link to={"/addringproduct"}>
+          <BsCartFill className="me-4 mt-2" />
+          </Link>
+          </NavLink>
+          </div>
+             {/* <NavLink>
+          <Link to={"/addringproduct"}>
+          </Link>
+          </NavLink>
+          <FaHeart className="me-4 mt-2" />
+          <NavLink>
+          <Link to={"/addringproduct"}>
+          <BsCartFill className="me-4 mt-2" />
+          </Link>
+          </NavLink> */}
+           </div>
+           <div className="col-12">
+            <input type="text" placeholder="Search price" className="search" />
+           </div>
         </div>
       </div>
     </div>

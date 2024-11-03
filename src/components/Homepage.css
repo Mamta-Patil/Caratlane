@@ -343,6 +343,7 @@ a.active {
   /* background-color: #807f7f; */
   color: red;
   width: 40%;
+  margin: auto;
 }
 .empty_cart .active
 {
