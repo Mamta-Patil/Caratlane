@@ -4,8 +4,8 @@ import "./components/Homepage.css"
 import "./components/Navbar.css"
 import "./components/Media.css"
 // import "./components/RingPage"
-
-import Homepage from './components/Homepage';
+import "./components/script"
+// import Homepage from './components/Homepage';
 import Navbar from "./components/Navbar";
 // import RingPage from "./components/RingPage";
 import {AllRoutes} from "./components/AllRoutes";

@@ -75,9 +75,11 @@ const Ring = () => {
                 </p>
               </div>
             ))}
-<br/>
+            <br/>
+            <div className="d-flex justify-content-around">
             <button className="" onClick={()=>setpage(page-1)}>Prev Page</button>
             <button className=""  onClick={()=>setpage(page+1)}>Next Page</button>
+            </div>
  
           </div>
          

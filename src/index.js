@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from "react-router-dom";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { CartContext } from './Context/CartConext';
+// import { CartContext } from './Context/CartConext';
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
