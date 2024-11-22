@@ -9,6 +9,7 @@ import AddRingProduct from './AddRingProduct'
 import Login from './Login'
 import PrivatePage from './PrivatePage'
 import SignUp from './SignUp'
+import Wishlist from './Wishlist'
 
 export const AllRoutes = () => {
   return (
@@ -24,11 +25,10 @@ export const AllRoutes = () => {
           }></Route>
         <Route path='/productdetails/:id' element={<RingsDetails />}></Route>
         <Route path='/addringproduct' element={<AddRingProduct />}></Route>
+        <Route path='/wishlist' element={<Wishlist />}></Route>
         <Route path='/login' element={<Login />}></Route>
         <Route path='/signup' element={<SignUp />}></Route>
-
         <Route path='*' element={<p>Page not found</p>}></Route>
-        
       </Routes>
     </div>            
   )

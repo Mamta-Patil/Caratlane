@@ -20,7 +20,6 @@ a {
 }
 .tab_content img {
   width: 80%;
-  /* position: absolute; */
   position: relative;
 }
 .tab_content img:hover {
@@ -29,16 +28,11 @@ a {
 }
 .collection  {
   padding: 10px 30px; 
-  /* margin-top: 10%;
-  margin-left: 28%; */
   border: 1px solid #433d8b;
   border-radius: 5px;
-  /* background-color: #fff; */
   background-color: #fff;
 }
 .designs .col-lg-4 {
-  /* background-color: #433d8b; */
-  /* width: 100%; */
   margin-left: -15%;
   margin-top: 20%;
 }
@@ -53,20 +47,14 @@ a {
   text-decoration: none;
 } 
 .StylishUpgrade {
-  /* width: 80%; */
   padding-top: 0%;
-  /* padding: 0% 40%; */
   margin: auto;
 }
-/* .StylishUpgrade .nav-link,
-.KnowMore .active */
 .Tanishq_Content .active
  {
   text-align: center;
   color: #fff;
-  /* background-color: #a65ff3; */
   border: 1px solid #a65ff3;
-  /* width: 200px; */
   padding: 10px 40px;
 }
 .KnowMore,
@@ -118,8 +106,9 @@ a.active {
 {
   position: relative;
   margin: 5% auto;
-  /* margin-top: 5%; */
 }
+
+
 /* LOgin Form */
 .user_info
 {
@@ -171,39 +160,25 @@ a.active {
 .certified svg
 {
   padding: 15px;
-  /* background-color: #adcda5; */
   color: #433d8b;
   border: 1px solid #d174d6;
   border-radius: 50%;
 }
 .prevbtn::after,.nextbtn::after
 {
-  /* font-size: 2px; */
   color: black;
-  /* padding: 10px;
-  border: 1px solid black;
-  border-radius: 50%;
-  background-color: black; */
 }
 
 
 /* Ring Css */
 .rings_product
 {
-  /* width: 100%;
-  margin-top: 90%; */
-  /* position: relative; 
-  top: 40%; */
   margin: 5% auto;
 }
 .products {
   gap: 20px;
-  /* background-color: #a65ff3; */
 }
 .ring {
-  /* background-color: #fff; */
-  /* margin: 2px; */
-  /* border: 1px solid lightgray; */
   border-radius: 10px;
   background-color: #fff;
 }
@@ -235,24 +210,24 @@ a.active {
 }
 .addToCartBtn
 {
-  /* width: 80%; */
   padding: 10px 60px;
   border:2px solid #433d8b;
   border-radius:15px;
   background-color: #a65ff3;
 }
+.products button
+{
+  /* padding: 10px 40px; */
+  height: 40px;
+  width: 150px;
+  background-color: #433d8b;
+  border-radius: 25px;
+}
 
 
 
 /* LOgin Form */
-.form {
-  /* text-align: center;
-  width: 35%;
-  margin: 5% auto;
-  padding-top: 5%; */
-}
 .form input {
-  /* width: 55%; */
   width: 60%;
   padding: 8px 20px;
   color: black;
@@ -261,14 +236,10 @@ a.active {
   border-radius: 10px;
 }
 .btn1 {
-  /* width: 55%; */
   background-color: #a65ff3;
   padding: 8px 40px;
   border: 1px solid #a65ff3;
   border-radius: 10px;
-}
-.google_btn {
-  /* margin-left: 23%; */
 }
 .signup_form {
   padding-top: 5%;
@@ -308,11 +279,6 @@ a.active {
 
 
 /* Cartpage css */
-.empty_cart
-{
-  /* text-align: center; */
-  /* padding-top: 15%; */
-}
 .cartpage
 {
   width: 100%;
@@ -330,17 +296,8 @@ a.active {
   border: 1px solid white;
   box-shadow: 1px 1px 1px 3px rgba(223, 221, 221, 0.5)
 }
-.deletbtn
-{
-  /* width: 100%; */
-  /* background-color: #433d8b; */
-  /* text-align: end; */
-  /* display: flex; */
-  /* justify-content: end; */
-}
 .cartDetails 
 {
-  /* background-color: #807f7f; */
   color: red;
   width: 40%;
   margin: auto;
@@ -349,7 +306,6 @@ a.active {
 {
   font-size: 25px;
   color: black;
-  /* padding-right: 40%; */
 }
 .shoping_btn
 {
@@ -363,14 +319,8 @@ a.active {
   width: 100%;
   padding: 10px 50px; 
   background-color: lightgrey;
-  /* margin-bottom: 0%; */
   position: absolute;
   transform: translate(-50%,-50%);
   bottom: 0%;
   left: 50%;
 }
-
-
-
-
-

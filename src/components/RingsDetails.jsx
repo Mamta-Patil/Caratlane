@@ -15,7 +15,7 @@ const RingsDetails = () => {
 
   const productdata = () => {
     axios
-      .get(`https://caratlane-backend.onrender.com/products/${id}`)
+      .get(`http://localhost:30001/products/${id}`)
       .then((res) => {
         setsingledata(res.data);
       })
@@ -30,10 +30,9 @@ const RingsDetails = () => {
 
   const AddToCart = () => {
     alert("add...");
-
     console.log(singledata);
     axios
-      .post("http://localhost:3000/post", singledata)
+      .post("http://localhost:30001/post", singledata)
       .then((res) => {
         console.log(res);
       })
@@ -90,7 +89,7 @@ const RingsDetails = () => {
           >
             {singledata.images?.map((el, ind) => (
               <div key={ind} className="col-lg-6">
-                <img src={el.image} className="img-fluid mt-2 " />
+                <img src={el.image} className="img-fluid" />
               </div>
             ))}
           </div>
@@ -112,7 +111,6 @@ const RingsDetails = () => {
         </div>
       </div>
       </div>
-
 
       {/* Footer */}
       <Footer />

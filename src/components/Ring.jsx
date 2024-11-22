@@ -1,20 +1,24 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import { FcLike } from "react-icons/fc";
+
 const Ring = () => {
  
+  // const [singledata, setsingledata] = useState({});
 
   const [productdata, setproductdata] = useState([]);
   const [page,setpage]=useState(1)
+
   const getfetchdata = () => {
     axios
-      .get("https://caratlane-backend.onrender.com/products", {
+      .get("http://localhost:30001/products", {
         params:{
           _page:page,
-           _limit:5,
+          _limit:5,
         }
       })
       .then((res) => {
@@ -26,15 +30,27 @@ const Ring = () => {
       });
   };
 
+  const addWishlist=(product)=>{
+    alert("add...");
+    // console.log(singledata);
+    axios
+      .post("http://localhost:30001/wishlist", product)
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+
+  }
+
   useEffect(() => {
     getfetchdata();
   }, [page]);
 
-
   return (
     <div>
       <Navbar />
-
       <div className="d-flex row m-0">
         <div className="d-flex rings_product" style={{ marginTop: "9%" }}>
           <div className="filters col-lg-3">
@@ -67,6 +83,7 @@ const Ring = () => {
                 <p className="fs-6 m-0 ps-2 pt-2" style={{ color: "#433d8b" }}>
                   {el.price}{" "}
                 </p>
+                <FcLike onClick={()=>addWishlist(el)} />
                 <p className="m-0 ps-2" style={{ color: "#de57e5" }}>
                   Check Delivery Date
                 </p>
@@ -76,14 +93,11 @@ const Ring = () => {
               </div>
             ))}
             <br/>
-            <div className="d-flex justify-content-around">
-            <button className="" onClick={()=>setpage(page-1)}>Prev Page</button>
-            <button className=""  onClick={()=>setpage(page+1)}>Next Page</button>
+            <div className="d-flex justify-content-around w-100">
+            <button className="text-light" onClick={()=>setpage(page-1)}>Prev Page</button>
+            <button className="ms-2 text-light"  onClick={()=>setpage(page+1)}>Next Page</button>
             </div>
- 
           </div>
-         
-
         </div>
       </div>
 
