@@ -53,7 +53,7 @@ const Ring = () => {
       <Navbar />
       <div className="d-flex row m-0">
         <div className="d-flex rings_product" style={{ marginTop: "9%" }}>
-          <div className="filters col-lg-3">
+          {/* <div className="filters col-lg-3">
             <h6>price</h6>
             <div>
               <input type="checkbox" className="ms-5" onCheck />
@@ -67,7 +67,7 @@ const Ring = () => {
               <input type="checkbox" className="ms-5" />
               <span className="ps-5">₹15,001 - ₹20,000 </span>
             </div>
-          </div>
+          </div> */}
 
           <div className="products">
             {productdata.map((el) => (
