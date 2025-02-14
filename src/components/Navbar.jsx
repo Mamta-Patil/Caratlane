@@ -11,15 +11,13 @@ import { RiMenu2Fill } from "react-icons/ri";
 import { TiThMenu } from "react-icons/ti";
 
 import "bootstrap/dist/css/bootstrap.min.css";
-// import "../components/Navbar.css"
 import LOGO from "../Assets/Logo.png";
-// import { Nav } from "react-bootstrap";
 const Navbar = () => {
 
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <div>
+    <div> 
       {/* Navbar for laptop mode */}
       <div className="navigation d-none d-lg-block">
         <div className="row m-0 py-4 navigation">
@@ -104,7 +102,7 @@ const Navbar = () => {
       <div className="navbar d-lg-none d-block position-fixed top-0">
         <div className="row m-0">
           <div className="col-4">
-            <RiMenu2Fill className="menu" onClick={() => setMenuOpen(!menuOpen)} />
+            <RiMenu2Fill className="menu fs-5" onClick={() => setMenuOpen(!menuOpen)} />
             <NavLink to={"/test"}>
               <img src={LOGO} height={35} width={50} />
             </NavLink>
@@ -173,6 +171,7 @@ const Navbar = () => {
           </div>
         ) : ""}
       </div>
+      
     </div>
   );
 };

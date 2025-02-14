@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { NavLink, useParams } from "react-router-dom";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 // react icons file
-import { FaCheckCircle } from "react-icons/fa";
-import { TbCoinRupeeFilled } from "react-icons/tb";
+// import { FaCheckCircle } from "react-icons/fa";
+// import { TbCoinRupeeFilled } from "react-icons/tb";
 
 const RingsDetails = () => {
   const { id } = useParams();
@@ -56,7 +56,7 @@ const RingsDetails = () => {
           >
             {singledata.images?.map((el, ind) => (
               <div key={ind}>
-                <img src={el.image} className="img-fluid mt-2" />
+                <img src={el.image} className="img-fluid" />
               </div>
             ))}
           </div>
@@ -88,7 +88,7 @@ const RingsDetails = () => {
             // style={{ display: "grid", gridTemplateColumns: "repeat(2,1fr)"}}
           >
             {singledata.images?.map((el, ind) => (
-              <div key={ind} className="col-lg-6">
+              <div key={ind} className="col-lg-6 p-0">
                 <img src={el.image} className="img-fluid" />
               </div>
             ))}

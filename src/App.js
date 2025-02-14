@@ -10,9 +10,6 @@ import Navbar from "./components/Navbar";
 // import RingPage from "./components/RingPage";
 import {AllRoutes} from "./components/AllRoutes";
 
-
-
-
 function App() {
   return (
     <div className="App"> 

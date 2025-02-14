@@ -57,10 +57,10 @@
 /* media icon setting */
 .slidebaritem 
 {
-  height: 250px;
+  height: 100vh;
   background-color: #433d8b;
   position: absolute;
-  top:50%;
+  top:99%;
   padding: 10px 20px;
   color: #fff;
 }

@@ -2,7 +2,6 @@ import React from 'react'
 import { Routes,Route } from 'react-router'
 import Homepage from './Homepage'
 import Test from '../Test'
-// import RingPages from './RingPages'
 import Ring from './Ring'
 import RingsDetails from './RingsDetails'
 import AddRingProduct from './AddRingProduct'
@@ -20,9 +19,10 @@ export const AllRoutes = () => {
         <Route path='/ringpage' element={
         // <PrivatePage>
           <Ring />
-          // </PrivatePage>
-            
-          }></Route>
+          // {/* </PrivatePage> */}
+          }>
+
+          </Route>
         <Route path='/productdetails/:id' element={<RingsDetails />}></Route>
         <Route path='/addringproduct' element={<AddRingProduct />}></Route>
         <Route path='/wishlist' element={<Wishlist />}></Route>

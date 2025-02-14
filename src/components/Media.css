@@ -5,10 +5,14 @@
 
   .filters {
     display: none;
+    /* display: flex; */
   }
-
+  .products{
+    margin-left: 0%;
+  }
   .products,
   .rings_details {
+    /* margin-top: 0%; */
     width: 100%;
     display: grid;
     grid-template-columns: repeat(1, 1fr);

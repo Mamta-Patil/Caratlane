@@ -1,7 +1,5 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-
-
 // React icons
 import { IoMdChatboxes } from "react-icons/io";
 import { IoMdCall } from "react-icons/io";

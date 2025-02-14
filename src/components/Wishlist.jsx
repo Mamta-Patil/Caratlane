@@ -1,6 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
 
 const Wishlist = () => {
@@ -39,7 +39,6 @@ useEffect(()=>{
     <div className='products' >
       {productdata.map((el) => (
         <div key={el.id} className="ring">
-          {/* <Link to={`/productdetails/${el.id}`}> */}
           <img
             src={el.image}
             height={300}
