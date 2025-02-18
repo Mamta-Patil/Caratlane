@@ -878,6 +878,31 @@
       "discount": "25% off",
       "size": "12 (51.8 mm)",
       "weight": "1.514 g"
+    },
+    {
+      "id": "4",
+      "title": "Laya Twirl Diamond Ring",
+      "image": "https://cdn.caratlane.com/media/catalog/product/J/R/JR03046-YGP600_1_lar.jpg",
+      "images": [
+        {
+          "image": "https://cdn.caratlane.com/media/catalog/product/J/R/JR03046-YGP600_1_lar.jpg"
+        },
+        {
+          "image": "https://cdn.caratlane.com/media/catalog/product/J/R/JR03046-YGP600_3_lar.jpg"
+        },
+        {
+          "image": "https://cdn.caratlane.com/media/catalog/product/J/R/JR03046-YGP600_4_lar.jpg"
+        },
+        {
+          "image": "https://cdn.caratlane.com/media/catalog/product/J/R/JR03046-YGP600_6_lar.jpg"
+        }
+      ],
+      "description": "Set in 14 KT Yellow Gold(1.940 g) with diamonds (0.122 ct ,IJ-SI)",
+      "price": "23,713",
+      "prevprice": "₹31,617",
+      "discount": "25% off",
+      "size": "12 (51.8 mm)",
+      "weight": "1.734 g"
     }
   ]
 }

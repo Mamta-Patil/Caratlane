@@ -5,14 +5,14 @@
 
   .filters {
     display: none;
-    /* display: flex; */
   }
-  .products{
+
+  .products {
     margin-left: 0%;
   }
+
   .products,
   .rings_details {
-    /* margin-top: 0%; */
     width: 100%;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -42,16 +42,12 @@
   }
 
   .cart {
-    width: 100%;
-  }
-
-  .cartDetails {
-    width: 100%;
+    margin-top: 20%;
   }
 
 }
 
-@media (min-width: 578px) and (max-width: 776px) {
+@media (min-width: 577px) and (max-width: 776px) {
   .navigation {
     height: 100px;
   }
@@ -60,14 +56,14 @@
     display: none;
   }
 
+  .products {
+    margin-top: 5%;
+  }
+
   .products,
   .rings_details {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .ring {
-    margin-top: 15%;
   }
 
   .rings_details {
@@ -90,14 +86,14 @@
     margin-left: 0%;
   }
 
-  .cartDetails {
-    width: 100%;
+  .cart {
+    margin-top: 20%;
   }
-
 
 }
 
-@media (min-width: 778px) and (max-width: 992px) {
+@media (min-width: 777px) and (max-width: 992px) {
+
   .navigation {
     height: 100px;
   }
@@ -127,7 +123,7 @@
   .form,
   .signup_form {
     margin: auto;
-    margin-top: 20%;
+    margin-top: 10%;
     width: 60%
   }
 
@@ -135,17 +131,17 @@
     margin-right: 0%;
   }
 
+  .cartpage {
+    margin-top: 15%;
+  }
 }
 
 @media (min-width: 993px) and (max-width: 1200px) {
-  .filters {
-    display: none;
-  }
-
   .products {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin-left: 24%;
   }
 
   .ring {
@@ -169,28 +165,27 @@
     margin-right: 0%;
 
   }
-/* 
-  .navigation,
-  .navbar {
-    height: 90px;
-    width: 100%;
-    position: fixed;
-    display: flex;
-    top: 0%;
-    background-color: #fff;
-    z-index: 999;
-    border: 1px solid lightgrey;
-  } */
 
 }
 
-@media (min-width: 1200px) and (max-width: 1500px) {
 
+@media (min-width: 1200px) and (max-width: 1500px) {
   .products,
-  .rings_details {
+  .rings_details,.wishlistproducts {
     margin-top: 5%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    /* margin-left: 24%; */
+  }
+  .products,
+  .rings_details
+  {
+    margin-left: 24%;
+
+  }
+  .wishlistproducts
+  {
+    margin-left: 0%;
   }
 
   .form {
@@ -203,15 +198,5 @@
     margin-right: 0%;
     margin-top: 20%;
   }
-  /* .navigation,
-  .navbar {
-    height: 90px;
-    width: 100%;
-    position: fixed;
-    display: flex;
-    top: 0%;
-    background-color: #fff;
-    z-index: 999;
-    border: 1px solid lightgrey;
-  } */
+
 }

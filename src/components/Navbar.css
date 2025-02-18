@@ -54,13 +54,13 @@
     right: 0%;
 }
 
-/* media icon setting */
+/* media query icon */
 .slidebaritem 
 {
   height: 100vh;
-  background-color: #433d8b;
+  background-color:blueviolet;
   position: absolute;
   top:99%;
-  padding: 10px 20px;
+  padding: 50px 50px;
   color: #fff;
 }

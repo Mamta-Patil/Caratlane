@@ -27,7 +27,6 @@ const Login = () => {
       {/* Navbar */}
        <Navbar />
 
-     {/* <p className="text-center">Login page</p>  */}
      <div className="form">
      <form>
      <h6>Login to CaratLane</h6>

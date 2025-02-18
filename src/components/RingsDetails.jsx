@@ -52,7 +52,6 @@ const RingsDetails = () => {
         <div>
           <div
             className="rings_details"
-            // style={{ display: "grid", gridTemplateColumns: "repeat(2,1fr)"}}
           >
             {singledata.images?.map((el, ind) => (
               <div key={ind}>
@@ -79,13 +78,11 @@ const RingsDetails = () => {
         </div>
       </div>
 
-      {/* for dekstop mode */}
       <div className="d-none d-lg-block mt-5">
       <div className="row m-0 d-flex mt-5">
         <div className="col-lg-8 mt-5">
           <div
             className="row"
-            // style={{ display: "grid", gridTemplateColumns: "repeat(2,1fr)"}}
           >
             {singledata.images?.map((el, ind) => (
               <div key={ind} className="col-lg-6 p-0">

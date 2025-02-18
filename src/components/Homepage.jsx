@@ -2,11 +2,6 @@
 import Navbar from "./Navbar";
 import Footer from "./Footer.jsx"
 import { NavLink } from "react-router-dom";
-import TextSlider from "../components/TextSlider.js";
-// bootstrap link for slider 1
-// import Carousel from 'react-bootstrap/Carousel';
-
-// imported images
 import Image1 from "../Assets/img1.jpg";
 import Image2 from "../Assets/img2.jpg";
 import Image3 from "../Assets/img3.webp";
@@ -58,7 +53,6 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 // aos animation
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-// import React,{useEffect} from "react";
 
 const Homepage = () => {
   useEffect(()=>{    
@@ -237,7 +231,6 @@ const Homepage = () => {
             </div>
             <div className="col-lg-4 col-md-6">
               <h4 className="pt-lg-4 pt-2">Come visit us at any of our stores!</h4>
-              {/* <input type="text" placeholder="Entet your pincode" /> */}
             </div>
           </div>
         </div>
@@ -274,15 +267,11 @@ const Homepage = () => {
         </div>
       </div>
 
-      {/* Best of Caratline */}
-      {/* Slider */}
-
       {/* product slider */}
       <div className="py-5">
       <Swiper
         slidesPerView={1}
         spaceBetween={10}
-        
         
         pagination={{
           clickable: true,
@@ -291,9 +280,8 @@ const Homepage = () => {
         navigation={{
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
-  }} 
+          }} 
 
-        
         breakpoints={{
           480: {
             slidesPerView: 2,
@@ -380,9 +368,6 @@ const Homepage = () => {
     
       </Swiper>
       </div>
-  
-     
-
 
       {/* Swiper Slider   */}
       <Swiper

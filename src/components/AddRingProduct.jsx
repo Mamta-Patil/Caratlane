@@ -238,25 +238,6 @@ const AddRingProduct = () => {
       })
     }
 
-
-    // axios
-    //   .get("http://localhost:30001/post/")
-    //   .then((res) => {
-    //     const storedCart = JSON.parse(localStorage.getItem("cartData"));
-    //     console.log(storedCart)
-    //     const dataWithQuantity = res.data.map(item => ({
-    //       ...item,
-    //       quantity: 1, // Set initial quantity to 1
-    //     }));
-
-    //     setadddata(res.data);
-    //     setadddata(dataWithQuantity);
-    //     console.log(dataWithQuantity);
-    //     console.log(res.data);
-    //   })
-    //   .catch((err) => {
-    //     console.log(err);
-    //   });
   };
 
   useEffect(() => PostData(), []);
@@ -308,16 +289,16 @@ localStorage.setItem("cartData",JSON.stringify(updateData))
     const updateData=adddata.map(item=>
       item.id===id && item.quantity>1?{...item,quantity:item.quantity-1}:item
     )
-setadddata(updateData)
-localStorage.setItem("cartData",JSON.stringify(updateData))    
+    setadddata(updateData)
+    localStorage.setItem("cartData",JSON.stringify(updateData))    
   };
 
   return (
     <div>
       <Navbar />
 
-      <div className="d-flex cartpage mt-lg-5">
-        <div className="cart mt-lg-5">
+      <div className="d-lg-flex cartpage mt-lg-5 col-12">
+        <div className="cart mt-lg-5 col-12 col-lg-8">
           {adddata.length === 0 ? (
             <div>
               <h3>There is Nothing here! </h3>
@@ -341,16 +322,17 @@ localStorage.setItem("cartData",JSON.stringify(updateData))
                 </div>
               </div>
             </div>
+
           ) : (
             adddata.map((el) => (
               <div key={el.id} className="d-flex empty_cart" style={{ width: "auto" }}>
                 <div>
                   <img src={el.image} height={200} width={200} className="img-fluid img-thumbnail mt-4 mb-4 ms-3 me-1" />
                 </div>
-                <div className="ps-2 pt-4">
+                <div className="ps-4 pt-4">
                   <div className="d-flex justify-content-between">
                     <p className="text-start">{el.price} </p>
-                    <NavLink onClick={() => deleteCart(el.id)} className={"deletbtn"}>
+                    <NavLink onClick={() => deleteCart(el.id)} className={"deletbtn"} >
                       <LuDelete />
                     </NavLink>
                   </div>
@@ -368,12 +350,12 @@ localStorage.setItem("cartData",JSON.stringify(updateData))
               </div>
             ))
           )}
-        </div>
+        {/* </div> */}
 
-        <div className="cartDetails d-none d-lg-block mt-5 pt-5">
+        {/* <div className="cartDetails d-none d-lg-block mt-5 pt-5">
           <p>Cart Details</p>
 
-          {/* add price with quantity */}
+          add price with quantity
           {adddata.map((item, index) => (
             <div key={item.id}>
               {item.title}: {item.price} x {item.quantity}    =   {(formatPriceToNumber(item.price) * item.quantity).toLocaleString()}
@@ -383,41 +365,26 @@ localStorage.setItem("cartData",JSON.stringify(updateData))
 
           <br />
 
-          {/* Calculate the total price considering the quantity */}
+          Calculate the total price considering the quantity
           {adddata
             .map((item) => formatPriceToNumber(item.price) * item.quantity)
             .reduce((total, value) => total + value, 0)
             .toLocaleString()}
           {adddata.map((item)=> formatPriceToNumber(item.price)).reduce((total,value)=> total + value,0).toLocaleString()}
-        </div>
+        </div> */}
       </div>
 
-      <div className="cartDetails d-block d-lg-none">
-        <p>Cart Details</p>
-
+      {/* <div className="cartDetails d-block"> */}
+        {/* <p>Cart Details</p> */}
         {/* add price with quantity */}
-        {adddata.map((item, index) => (
+        {/* {adddata.map((item, index) => (
           <div key={item.id}>
             {item.title}: {item.price} x {item.quantity}    =   {(formatPriceToNumber(item.price) * item.quantity).toLocaleString()}
             <br />
           </div>
-        ))}
+        ))} */}
 
-        <br />
-
-      </div>
-
-      {/*  */}
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-
-      <div className="cartDetails d-block">
+       <div className="cartDetails d-block">
         <p>Cart Details</p>
         <table className="table">
           <thead>
@@ -445,7 +412,12 @@ localStorage.setItem("cartData",JSON.stringify(updateData))
           <strong>Total:</strong> {adddata.map((item) => formatPriceToNumber(item.price) * item.quantity).reduce((total, value) => total + value, 0).toLocaleString()}
         </div>
       </div>
+        <br />
 
+      </div>
+
+      <br />
+      <br />
     </div>
   );
 };

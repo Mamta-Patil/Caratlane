@@ -27,13 +27,11 @@ const SignUp = () => {
       <Navbar />
 
       <div className="col-lg-6 signup_form">
-        <p>Signup with CaratLane</p>
         <form onSubmit={handlesubmit}>
           <div className="signupwithgoogle">
-            {/* <GoogleButton onClick={handlesubmit}  /> */}
             <br />
           </div>
-          <p className="continuewith">or Continue with </p>
+          <p className="continuewith">Continue with </p>
 
           <div>
             <input
@@ -52,18 +50,18 @@ const SignUp = () => {
           <br className="d-sm-none" />
 
           <div>
-            <input type="text" placeholder="First Name" className="input mt-sm-2" />
+            <input type="text" placeholder="First Name" className="input mt-sm-2 ms-sm-2" />
             <input type="text" placeholder="Last Name" className="input ms-lg-2 mt-sm-2" />
           </div>
           <br />
 
-          <div className="text-start checkbox">
-            <input type="radio" value="Male" />
-            Male
-            <input type="radio" value="Female" />
-            Female
-            <input type="radio" value="Other" />
-            Other
+          <div className="text-center checkbox ps-0">
+            <input type="radio" value="Male" />&nbsp; 
+            Male   &nbsp; &nbsp; 
+            <input type="radio" value="Female" />&nbsp; 
+             Female&nbsp; &nbsp; 
+            <input type="radio" value="Other" />&nbsp; 
+            Other&nbsp; &nbsp; 
           </div>
 
           <button onClick={handlesubmit} className="signupbtn mt-2">

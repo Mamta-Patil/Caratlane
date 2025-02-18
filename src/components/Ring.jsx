@@ -89,7 +89,7 @@ const Ring = () => {
       <div className="d-flex row m-0">
         <div className="d-flex rings_product" style={{ marginTop: "9%" }}>
           {/* Filter Section */}
-          <div className="filters col-lg-3">
+          <div className="filters col-lg-2">
             <h6>Price</h6>
             {priceRanges.map((range, index) => (
               <div key={index}>
@@ -145,28 +145,25 @@ const Ring = () => {
             ) : (
               <p>No products found for selected filters.</p>
             )}
-
-
           </div>
           
         </div>  
-                    {/* Pagination */}
-              <div className="d-flex justify-content-center w-100 mt-3">
+              {/* Pagination */}
+              <div className="d-flex justify-content-center w-100 mt-3 mb-3">
                 <button
-                className="btn btn-primary"
+                className="btn" style={{backgroundColor:"#433d8b",color:"#fff"}} 
                 disabled={page === 1}
                 onClick={() => setPage(page - 1)}
                 >
                 Prev Page
                 </button>
-                <button className="btn btn-primary" onClick={() => setPage(page + 1)}>
+                <button className="btn" onClick={() => setPage(page + 1)} style={{backgroundColor:"#433d8b",color:"#fff"}}  >
                 Next Page
                 </button>
             </div>
       </div>
 
-
-      <Button className="btn offcanvance_btn p-2" style={{backgroundColor:"#433d8b",color:"#fff"}} variant="" onClick={handleShow}>
+      <Button className="btn offcanvance_btn p-2 d-lg-none" style={{backgroundColor:"#433d8b",color:"#fff"}} variant="" onClick={handleShow}>
         Filter Products
       </Button>
 

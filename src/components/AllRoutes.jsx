@@ -1,7 +1,6 @@
 import React from 'react'
 import { Routes,Route } from 'react-router'
 import Homepage from './Homepage'
-import Test from '../Test'
 import Ring from './Ring'
 import RingsDetails from './RingsDetails'
 import AddRingProduct from './AddRingProduct'
@@ -15,7 +14,6 @@ export const AllRoutes = () => {
     <div>
       <Routes>
         <Route path='/' element={<Homepage />}></Route>
-        <Route path='/test' element={<Test />}></Route>
         <Route path='/ringpage' element={
         // <PrivatePage>
           <Ring />
@@ -33,5 +31,3 @@ export const AllRoutes = () => {
     </div>            
   )
 }
-
-// export default AllRoutes

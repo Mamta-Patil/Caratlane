@@ -28,24 +28,22 @@ const Navbar = () => {
             <Link to="/ringpage" className={"text-dark nav-link p-0"}>
               Rings
             </Link>
-            <NavLink to={"/test"} className={"text-dark nav-link p-0"}>
+            <NavLink to={""} className={"text-dark nav-link p-0"}>
               Earrings
             </NavLink>
-            <NavLink to={"/test"} className={"text-dark nav-link p-0"}>
+            <NavLink to={""} className={"text-dark nav-link p-0"}>
               Bracelets & Bangles
             </NavLink>
-            <NavLink to={"/test"} className={"text-dark nav-link p-0"}>
+            <NavLink to={""} className={"text-dark nav-link p-0"}>
               Solitairis
             </NavLink>
-            <NavLink to={"/test"} className={"text-dark nav-link p-0 d-lg-block d-none"}>
+            <NavLink to={""} className={"text-dark nav-link p-0 d-lg-block d-none"}>
               Manglesutras
             </NavLink>
-            {/* <NavLink to={"/test"} className={"text-dark nav-link p-0"}>Nacklces</NavLink> */}
           </div>
 
           <div className="col-lg-6 d-flex justify-content-end">
             <div className="ms-4 me-4 input">
-              {/* <input type="search" placeholder="search" style={{width:"200px"}} /> */}
               <button
                 style={{
                   backgroundColor: "violet",
@@ -67,7 +65,7 @@ const Navbar = () => {
               />
             </NavLink>
             <div className="user_info">
-              <FaUser className="me-4 mt-2" />
+              <FaUser className="me-4 mt-2" style={{color:"#433d8b"}} />
               <div className="info">
                 <h6>
                   <NavLink>Your Account </NavLink>
@@ -85,12 +83,12 @@ const Navbar = () => {
               </div>
               <NavLink>
                 <Link to={"/wishlist"}>
-                  <FaHeart className="me-4 mt-2" />
+                  <FaHeart className="me-4 mt-2" style={{color:"#433d8b"}} />
                 </Link>
               </NavLink>
               <NavLink>
                 <Link to={"/addringproduct"}>
-                  <BsCartFill className="me-4 mt-2" />
+                  <BsCartFill className="me-4 mt-2" style={{color:"#433d8b"}} />
                 </Link>
               </NavLink>
             </div>
@@ -102,14 +100,14 @@ const Navbar = () => {
       <div className="navbar d-lg-none d-block position-fixed top-0">
         <div className="row m-0">
           <div className="col-4">
-            <RiMenu2Fill className="menu fs-5" onClick={() => setMenuOpen(!menuOpen)} />
+            <RiMenu2Fill className="menu fs-5" style={{color:"#433d8b"}} onClick={() => setMenuOpen(!menuOpen)} />
             <NavLink to={"/test"}>
               <img src={LOGO} height={35} width={50} />
             </NavLink>
           </div>
           <div className="col-8 text-end navitems">
             <div className="user_info">
-              <FaUser className="me-4 mt-2" />
+              <FaUser className="me-4 mt-2"  style={{color:"#433d8b"}}/>
               <div className="info">
                 <h6>
                   <NavLink>Your Account </NavLink>
@@ -126,21 +124,15 @@ const Navbar = () => {
                 </h6>
               </div>
 
-              {/* <NavLink to={"/wishlist"} >
-            <FaHeart className="me-4 mt-2" />
-            </NavLink> */}
-
-
-
               <NavLink>
                 <Link to={"/wishlist"}>
-                  <FaHeart className="me-4 mt-2" />
+                  <FaHeart className="me-4 mt-2" style={{color:"#433d8b"}} />
                 </Link>
               </NavLink>
 
               <NavLink>
                 <Link to={"/addringproduct"}>
-                  <BsCartFill className="me-4 mt-2" />
+                  <BsCartFill className="me-4 mt-2" style={{color:"#433d8b"}}  />
                 </Link>
               </NavLink>
             </div>

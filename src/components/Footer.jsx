@@ -16,7 +16,7 @@ const Footer = () => {
   return (
     <div>
           {/* Footer */}
-          <div className="footer bg-light ">
+        <div className="footer bg-light ">
         <div className="row m-0 py-5 ">
           <div className="col-lg-2">
             <h6 className="text-dark">Know Your Jewellery</h6>

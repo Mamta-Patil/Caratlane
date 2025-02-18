@@ -1,7 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-// import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
+import { NavLink } from 'react-router-dom';
 
 const Wishlist = () => {
   const [productdata, setproductdata] = useState([]);
@@ -36,7 +36,11 @@ useEffect(()=>{
 
     <div>
       <Navbar />
-    <div className='products' >
+      <div>
+      <h4 className='wishlist'>Your Wishlist</h4>
+      <NavLink to={"/"}>Homepage </NavLink>
+
+    <div className='wishlistproducts' >
       {productdata.map((el) => (
         <div key={el.id} className="ring">
           <img
@@ -59,6 +63,8 @@ useEffect(()=>{
         </div>
       ))}
     </div>
+    </div>
+
     </div>
 
   )
