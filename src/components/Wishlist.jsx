@@ -7,7 +7,7 @@ const Wishlist = () => {
   const [productdata, setproductdata] = useState([]);
 
   const WishListData = () => {
-    axios.get("http://localhost:30001/wishlist")
+    axios.get("https://caratlane-backend.onrender.com/wishlist")
       .then((res) => {
         console.log(res.data)
         setproductdata(res.data)
@@ -17,7 +17,7 @@ const Wishlist = () => {
   }
 
   const DeleteWishListProduct=(id)=>{
-        axios.delete(`http://localhost:30001/wishlist/${id}`)
+        axios.delete(`https://caratlane-backend.onrender.com/wishlist/${id}`)
       .then((res) => {
         console.log(res)
         alert("Want you delete product from wishList product")
