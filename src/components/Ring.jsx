@@ -26,7 +26,7 @@ const Ring = () => {
 
   const addWishlist = (product) => {
     axios
-      .post("http://localhost:30001/wishlist", product)
+      .post("https://caratlane-backend.onrender.com/wishlist", product)
       .then(() => alert("Added to wishlist!"))
       .catch((err) => console.log(err));
   };
@@ -44,7 +44,7 @@ const Ring = () => {
     }
 
     axios
-      .get("http://localhost:30001/products", { params })
+      .get("https://caratlane-backend.onrender.com/products", { params })
       .then((res) => {
         let filteredProducts = res.data;
 
